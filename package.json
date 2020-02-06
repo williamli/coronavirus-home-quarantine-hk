@@ -1,5 +1,6 @@
 {
   "name": "create-next-example-app",
+  "version": "0.0.1",
   "description": "A Next.js starter app.",
   "repository": {
     "type": "git",

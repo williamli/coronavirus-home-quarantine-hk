@@ -4,57 +4,59 @@ import Head from '../components/head';
 import Nav from '../components/nav';
 
 const Home = () => {
-  const [date, setDate] = useState(null);
+  // const [date, setDate] = useState(null);
 
-  useEffect(() => {
-    async function getDate() {
-      const res = await fetch('/api/date');
-      const newDate = await res.json();
-      setDate(newDate);
-    }
-    getDate();
-  }, []);
+  // useEffect(() => {
+  //   async function getDate() {
+  //     const res = await fetch('/api/date');
+  //     const newDate = await res.js香港on();
+  //     setDate(newDate);
+  //   }
+  //   getDate();
+  // }, []);
 
   return (
     <div>
-      <Head title="Home" />
+      <Head title="正在接受 14 天家居檢疫人士所居住的大廈名單" />
       <Nav />
 
       <div className="hero">
-        <h1 className="title">Welcome to Next!</h1>
-        <p className="description">
+        <h1 className="title">正在接受 14 天家居檢疫人士所居住的大廈名單</h1>
+        <h6 style={{marginTop: "0.85rem"}}>v0.0.1</h6>
+        <h6>更新日期： 2020-02-06</h6>
+        {/* <p className="description">
           To get started, edit the <code>pages/index.js</code> or{' '}
           <code>pages/api/date.js</code> files, then save to reload.
-        </p>
+        </p> */}
 
-        <p className="row date">
-          The date is:&nbsp;{' '}
-          {date ? (
-            <span>
-              <b>{date.date}</b>
-            </span>
-          ) : (
-            <span className="loading"></span>
-          )}
-        </p>
+        
 
         <div className="row">
-          <Link href="https://github.com/zeit/next.js#setup">
-            <a className="card">
-              <h3>Getting Started &rarr;</h3>
-              <p>Learn more about Next.js on GitHub and in their examples.</p>
+          <Link href="https://docs.google.com/spreadsheets/d/1LItv6Nk5TfSGrlTedpNs4wsJDFUuPBcTWK0FIPuWC7I/edit?usp=sharing">
+            <a className="card" target="_blank">
+              <h3>正在接受 14 天家居檢疫人士所居住的大廈名單 (Google Sheet) &rarr;</h3>
+              {/* <p>Learn more about Next.js on GitHub and in their examples.</p> */}
             </a>
           </Link>
-          <Link href="https://github.com/zeit/next.js/tree/master/examples">
-            <a className="card">
-              <h3>Examples &rarr;</h3>
-              <p>Find other example boilerplates on the Next.js GitHub.</p>
+          <Link href="/data/quarantine-info-zh-20200206.csv">
+            <a className="card" target="_blank">
+              <h3>正在接受 14 天家居檢疫人士所居住的大廈名單 (CSV) &rarr;</h3>
+              {/* <p>Find other example boilerplates on the Next.js GitHub.</p> */}
             </a>
           </Link>
-          <Link href="https://github.com/zeit/next.js">
-            <a className="card">
-              <h3>Create Next App &rarr;</h3>
-              <p>Was this tool helpful? Let us know how we can improve it!</p>
+          <Link href="/data/quarantine-info-zh-20200206.json">
+            <a className="card" target="_blank">
+              <h3>正在接受 14 天家居檢疫人士所居住的大廈名單 (JSON) &rarr;</h3>
+              {/* <p>Was this tool helpful? Let us know how we can improve it!</p> */}
+            </a>
+          </Link>
+        </div>
+
+        <div className="row">
+          <Link href="https://www.chp.gov.hk/files/pdf/list_of_buildings_tc.pdf">
+            <a className="card" target="_blank">
+              <h3>香港衞生署衞生防護中心官方名單 &rarr;</h3>
+              {/* <p>Learn more about Next.js on GitHub and in their examples.</p> */}
             </a>
           </Link>
         </div>
@@ -73,7 +75,7 @@ const Home = () => {
           font-size: 48px;
         }
         .title,
-        .description {
+        .description, h6 {
           text-align: center;
         }
         .row {
@@ -116,6 +118,8 @@ const Home = () => {
         .card {
           padding: 18px 18px 24px;
           width: 220px;
+          flex: 1;
+          margin: 0 1rem;
           text-align: left;
           text-decoration: none;
           color: #434343;
