@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import Head from '../components/head';
-import Nav from '../components/nav';
+import Head from '/components/head';
+import Nav from '/components/nav';
 
 const Home = () => {
   // const [date, setDate] = useState(null);
@@ -32,19 +32,17 @@ const Home = () => {
         
 
         <div className="row">
-          <Link href="https://docs.google.com/spreadsheets/d/1LItv6Nk5TfSGrlTedpNs4wsJDFUuPBcTWK0FIPuWC7I/edit?usp=sharing">
-            <a className="card" target="_blank">
-              <h3>正在接受 14 天家居檢疫人士所居住的大廈名單 (Google Sheet) &rarr;</h3>
-              {/* <p>Learn more about Next.js on GitHub and in their examples.</p> */}
-            </a>
-          </Link>
-          <Link href="/data/quarantine-info-zh-20200206.csv">
+          <a className="card" target="_blank" href="https://docs.google.com/spreadsheets/d/1LItv6Nk5TfSGrlTedpNs4wsJDFUuPBcTWK0FIPuWC7I/edit?usp=sharing">
+            <h3>正在接受 14 天家居檢疫人士所居住的大廈名單 (Google Sheet) &rarr;</h3>
+            {/* <p>Learn more about Next.js on GitHub and in their examples.</p> */}
+          </a>
+          <Link href="/data/quarantine-info-zh_hk-20200206.csv">
             <a className="card" target="_blank">
               <h3>正在接受 14 天家居檢疫人士所居住的大廈名單 (CSV) &rarr;</h3>
               {/* <p>Find other example boilerplates on the Next.js GitHub.</p> */}
             </a>
           </Link>
-          <Link href="/data/quarantine-info-zh-20200206.json">
+          <Link href="/data/quarantine-info-zh_hk-20200206.json">
             <a className="card" target="_blank">
               <h3>正在接受 14 天家居檢疫人士所居住的大廈名單 (JSON) &rarr;</h3>
               {/* <p>Was this tool helpful? Let us know how we can improve it!</p> */}
@@ -53,12 +51,10 @@ const Home = () => {
         </div>
 
         <div className="row">
-          <Link href="https://www.chp.gov.hk/files/pdf/list_of_buildings_tc.pdf">
-            <a className="card" target="_blank">
-              <h3>香港衞生署衞生防護中心官方名單 &rarr;</h3>
-              {/* <p>Learn more about Next.js on GitHub and in their examples.</p> */}
-            </a>
-          </Link>
+          <a className="card" target="_blank" href="https://www.chp.gov.hk/files/pdf/list_of_buildings_tc.pdf">
+            <h3>香港衞生署衞生防護中心官方名單 &rarr;</h3>
+            {/* <p>Learn more about Next.js on GitHub and in their examples.</p> */}
+          </a>
         </div>
       </div>
 
