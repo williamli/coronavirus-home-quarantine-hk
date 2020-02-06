@@ -1,8 +1,8 @@
 {
   "name": "coronavirus-home-quarantine-hk",
   "version": 2,
-  "trailingSlash": true,
+  "trailingSlash": false,
   "redirects": [
-    { "source": "/", "destination": "/zh-HK/"}
+    { "source": "/", "destination": "/zh-HK"}
   ]
 }
