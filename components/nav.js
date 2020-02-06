@@ -12,11 +12,11 @@ const links = [
 const Nav = () => (
   <nav>
     <ul>
-      {/* <li>
-        <Link href="/">
-          <a>Home</a>
+      <li>
+        <Link href="/en-HK/">
+          <a>View in English</a>
         </Link>
-      </li> */}
+      </li>
       {links.map(({ key, href, label }) => (
         <li key={key}>
           <a target="_blank" href={href}>{label}</a>

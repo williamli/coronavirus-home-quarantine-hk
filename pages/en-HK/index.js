@@ -17,13 +17,13 @@ const Home = () => {
 
   return (
     <div>
-      <Head title="🦠 武漢肺炎 香港 - 正在接受 14 天家居檢疫人士所居住的大廈名單" />
+      <Head title="🦠 Coronavirus Hong Kong - List of buildings of the home confinees who are under the 14-day home quarantine" />
       <Nav />
 
       <div className="hero">
-        <h1 className="title">正在接受 14 天家居檢疫人士所居住的大廈名單</h1>
+        <h1 className="title">List of buildings of the home confinees who are under the 14-day home quarantine</h1>
         <h6 style={{marginTop: "0.85rem"}}>v0.0.1</h6>
-        <h6>更新日期： 2020-02-06</h6>
+        <h6>Updated Date： 2020-02-06</h6>
         {/* <p className="description">
           To get started, edit the <code>pages/index.js</code> or{' '}
           <code>pages/api/date.js</code> files, then save to reload.
@@ -32,27 +32,27 @@ const Home = () => {
         
 
         <div className="row">
-          <a className="card" target="_blank" href="https://docs.google.com/spreadsheets/d/1LItv6Nk5TfSGrlTedpNs4wsJDFUuPBcTWK0FIPuWC7I/edit?usp=sharing">
-            <h3>正在接受 14 天家居檢疫人士所居住的大廈名單 (Google Sheet) &rarr;</h3>
+          <a className="card" target="_blank" href="https://docs.google.com/spreadsheets/d/1XctreRwHm-b8wzXlEXBDvxr8oNTnTNueIsVc7q89i5M/edit?usp=sharing">
+            <h3>List of buildings of the home confinees who are under the 14-day home quarantine (Google Sheet) &rarr;</h3>
             {/* <p>Learn more about Next.js on GitHub and in their examples.</p> */}
           </a>
-          <Link href="/data/quarantine-info-zh_hk-20200206.csv">
+          <Link href="/data/quarantine-info-en_hk-20200206.csv">
             <a className="card" target="_blank">
-              <h3>正在接受 14 天家居檢疫人士所居住的大廈名單 (CSV) &rarr;</h3>
+              <h3>List of buildings of the home confinees who are under the 14-day home quarantine (CSV) &rarr;</h3>
               {/* <p>Find other example boilerplates on the Next.js GitHub.</p> */}
             </a>
           </Link>
-          <Link href="/data/quarantine-info-zh_hk-20200206.json">
+          <Link href="/data/quarantine-info-en_hk-20200206.json">
             <a className="card" target="_blank">
-              <h3>正在接受 14 天家居檢疫人士所居住的大廈名單 (JSON) &rarr;</h3>
+              <h3>List of buildings of the home confinees who are under the 14-day home quarantine (JSON) &rarr;</h3>
               {/* <p>Was this tool helpful? Let us know how we can improve it!</p> */}
             </a>
           </Link>
         </div>
 
         <div className="row">
-          <a className="card" target="_blank" href="https://www.chp.gov.hk/files/pdf/list_of_buildings_tc.pdf">
-            <h3>香港衞生署衞生防護中心官方名單 &rarr;</h3>
+          <a className="card" target="_blank" href="https://www.chp.gov.hk/files/pdf/list_of_buildings_en.pdf">
+            <h3>Official List from Hong Kong's Centre for Health Protection (CHP) of the Department of Health &rarr;</h3>
             {/* <p>Learn more about Next.js on GitHub and in their examples.</p> */}
           </a>
         </div>
