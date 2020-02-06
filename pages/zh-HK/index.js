@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <div>
       <Head title="🦠 武漢肺炎 香港 - 正在接受 14 天家居檢疫人士所居住的大廈名單" />
-      <Nav />
+      <Nav locale="zh-HK"/>
 
       <div className="hero">
         <h1 className="title">正在接受 14 天家居檢疫人士所居住的大廈名單</h1>

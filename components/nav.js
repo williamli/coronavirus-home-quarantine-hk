@@ -9,13 +9,18 @@ const links = [
   return link;
 });
 
-const Nav = () => (
+const Nav = (props) => (
   <nav>
     <ul>
       <li>
-        <Link href="/en-HK/">
-          <a>View in English</a>
-        </Link>
+        { props.locale === 'zh-HK' ?
+            <Link href="/en-HK">
+              <a>View in English</a>
+            </Link>
+          : <Link href="/zh-HK">
+              <a>以繁體中文閱讀</a>
+            </Link>
+        }
       </li>
       {links.map(({ key, href, label }) => (
         <li key={key}>
