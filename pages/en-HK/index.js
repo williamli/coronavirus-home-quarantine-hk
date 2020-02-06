@@ -17,7 +17,7 @@ const Home = () => {
 
   return (
     <div>
-      <Head title="📑 List of home confinees under the 14-day home quarantine - 🦠 Coronavirus Hong Kong" description="List of home confinees under the 14-day home quarantine in Hong Kong due to Coronavirus in various comprehensible formats."/>
+      <Head title="List of home confinees under the 14-day home quarantine - 🦠 Coronavirus Hong Kong" description="List of home confinees under the 14-day home quarantine in Hong Kong due to Coronavirus in various comprehensible formats."/>
       <Nav locale="en-HK"/>
 
       <div className="hero">
