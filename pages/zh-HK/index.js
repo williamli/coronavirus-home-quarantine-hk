@@ -17,11 +17,11 @@ const Home = () => {
 
   return (
     <div>
-      <Head title="🦠 武漢肺炎 香港 - 正在接受 14 天家居檢疫人士所居住的大廈名單" description="" ogImage=""/>
+      <Head title="📑 正在接受 14 天家居檢疫人士居住名單 - 🦠 武漢肺炎 香港" description="《官方資料 PDF 格式太廢》用唔同格式顯示正在接受 14 天家居檢疫人士居住名單。"/>
       <Nav locale="zh-HK"/>
 
       <div className="hero">
-        <h1 className="title">正在接受 14 天家居檢疫人士所居住的大廈名單</h1>
+        <h1 className="title">正在接受 14 天家居檢疫人士居住名單</h1>
         <h6 style={{marginTop: "0.85rem"}}>v0.0.1</h6>
         <h6>更新日期： 2020-02-06</h6>
         {/* <p className="description">
@@ -33,18 +33,18 @@ const Home = () => {
 
         <div className="row">
           <a className="card" target="_blank" href="https://docs.google.com/spreadsheets/d/1LItv6Nk5TfSGrlTedpNs4wsJDFUuPBcTWK0FIPuWC7I/edit?usp=sharing">
-            <h3>正在接受 14 天家居檢疫人士所居住的大廈名單 (Google Sheet) &rarr;</h3>
+            <h3>Google Sheet &rarr;</h3>
             {/* <p>Learn more about Next.js on GitHub and in their examples.</p> */}
           </a>
           <Link href="/data/quarantine-info-zh_hk-20200206.csv">
             <a className="card" target="_blank">
-              <h3>正在接受 14 天家居檢疫人士所居住的大廈名單 (CSV) &rarr;</h3>
+              <h3>CSV &rarr;</h3>
               {/* <p>Find other example boilerplates on the Next.js GitHub.</p> */}
             </a>
           </Link>
           <Link href="/data/quarantine-info-zh_hk-20200206.json">
             <a className="card" target="_blank">
-              <h3>正在接受 14 天家居檢疫人士所居住的大廈名單 (JSON) &rarr;</h3>
+              <h3>JSON &rarr;</h3>
               {/* <p>Was this tool helpful? Let us know how we can improve it!</p> */}
             </a>
           </Link>

@@ -17,11 +17,11 @@ const Home = () => {
 
   return (
     <div>
-      <Head title="🦠 Coronavirus Hong Kong - List of buildings of the home confinees who are under the 14-day home quarantine" />
+      <Head title="📑 List of home confinees under the 14-day home quarantine - 🦠 Coronavirus Hong Kong" description="List of home confinees under the 14-day home quarantine in Hong Kong due to Coronavirus in various comprehensible formats."/>
       <Nav locale="en-HK"/>
 
       <div className="hero">
-        <h1 className="title">List of buildings of the home confinees who are under the 14-day home quarantine</h1>
+        <h1 className="title">List of home confinees under the 14-day home quarantine</h1>
         <h6 style={{marginTop: "0.85rem"}}>v0.0.1</h6>
         <h6>Updated Date： 2020-02-06</h6>
         {/* <p className="description">
@@ -33,18 +33,18 @@ const Home = () => {
 
         <div className="row">
           <a className="card" target="_blank" href="https://docs.google.com/spreadsheets/d/1XctreRwHm-b8wzXlEXBDvxr8oNTnTNueIsVc7q89i5M/edit?usp=sharing">
-            <h3>List of buildings of the home confinees who are under the 14-day home quarantine (Google Sheet) &rarr;</h3>
+            <h3>Google Sheet &rarr;</h3>
             {/* <p>Learn more about Next.js on GitHub and in their examples.</p> */}
           </a>
           <Link href="/data/quarantine-info-en_hk-20200206.csv">
             <a className="card" target="_blank">
-              <h3>List of buildings of the home confinees who are under the 14-day home quarantine (CSV) &rarr;</h3>
+              <h3>CSV &rarr;</h3>
               {/* <p>Find other example boilerplates on the Next.js GitHub.</p> */}
             </a>
           </Link>
           <Link href="/data/quarantine-info-en_hk-20200206.json">
             <a className="card" target="_blank">
-              <h3>List of buildings of the home confinees who are under the 14-day home quarantine (JSON) &rarr;</h3>
+              <h3>JSON &rarr;</h3>
               {/* <p>Was this tool helpful? Let us know how we can improve it!</p> */}
             </a>
           </Link>
