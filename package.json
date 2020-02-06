@@ -1,10 +1,10 @@
 {
-  "name": "create-next-example-app",
+  "name": "coronavirus-hk-dashboard",
   "version": "0.0.1",
-  "description": "A Next.js starter app.",
+  "description": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zeit/now/tree/master/examples/nextjs"
+    "url": "https://github.com/williamli/coronavirus-hk-dashboard"
   },
   "license": "MIT",
   "scripts": {
