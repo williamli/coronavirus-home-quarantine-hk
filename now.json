@@ -1,8 +1,13 @@
 {
-  "name": "coronavirus-home-quarantine-hk",
   "version": 2,
   "trailingSlash": false,
   "redirects": [
     { "source": "/", "destination": "/zh-HK"}
-  ]
+  ],
+  "functions": {
+    "pages/api/[locale]/[id]/[format].js": {
+      "memory": 512,
+      "includeFiles": "data/**"
+    }
+  }
 }
