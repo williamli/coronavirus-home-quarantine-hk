@@ -1,7 +1,7 @@
 {
   "name": "coronavirus-hk-dashboard",
   "version": 2,
-  "regions": "all",
+  "regions": ["all"],
   "trailingSlash": true,
   "redirects": [
     { "source": "/", "destination": "/zh-HK/"}
