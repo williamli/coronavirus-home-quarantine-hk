@@ -1,10 +1,10 @@
 {
-  "name": "coronavirus-hk-dashboard",
+  "name": "coronavirus-home-quarantine-hk",
   "version": "0.0.1",
   "description": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/williamli/coronavirus-hk-dashboard"
+    "url": "https://github.com/williamli/coronavirus-home-quarantine-hk"
   },
   "license": "MIT",
   "scripts": {
