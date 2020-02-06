@@ -4,7 +4,7 @@ import { string } from 'prop-types';
 
 const defaultDescription = '';
 const defaultOGURL = '';
-const defaultOGImage = '/coronavirus-home-quarantine-hk-og.jpg';
+const defaultOGImage = 'https://coronavirus-home-quarantine-hk.now.sh/coronavirus-home-quarantine-hk-og.jpg';
 
 const Head = props => (
   <NextHead>
