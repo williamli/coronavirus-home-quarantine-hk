@@ -5,8 +5,8 @@
     { "source": "/", "destination": "/zh-HK"}
   ],
   "functions": {
-    "pages/api/[locale]/[id]/[format].js": {
-      "memory": 512,
+    "api/[locale]/[id]/[format].js": {
+      "memory": 1024,
       "includeFiles": "data/**"
     }
   }
