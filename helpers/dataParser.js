@@ -6,7 +6,7 @@ String.prototype.removeHeadings = function (locale) {
 }
 
 String.prototype.removeNumbers = function () {
-  return this.replace(new RegExp(/^\d+\. /, 'gm'), '.');
+  return this.replace(new RegExp(/^\d+\. |^\d+ /, 'gm'), '.');
 }
 
 String.prototype.tokenizeRecords = function () {
