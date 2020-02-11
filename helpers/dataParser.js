@@ -34,9 +34,11 @@ String.prototype.formatAddress = function (locale) {
   return this.replace(formatter, "\"$1\",\"$3\"$4");
 }
 
-String.prototype.appendHeadings = function (locale) {
+String.prototype.appendHeadings = function (locale, shortHeaders = false) {
   
-  const headings = locale === 'en-HK' ? `District, Name of Building, End Date of Home Quarantine` : `地區, 大廈名稱, 家居檢疫最後日期`;
+  const headings = shortHeaders ? 
+  "district,building,lastDayofHomeConfinees" :
+  locale === 'en-HK' ? `District, Name of Building, End Date of Home Quarantine` : `地區, 大廈名稱, 家居檢疫最後日期`;
   return `${headings}
 ${this}`;
 }
@@ -79,7 +81,7 @@ const rawToCSV = (rawContent, locale) => {
 const rawToJSON = async (rawContent, locale) => {
   
 
-  return await csvToJSON(getRecords(rawContent, locale).join('\n').appendHeadings(locale));
+  return await csvToJSON(getRecords(rawContent, locale).join('\n').appendHeadings(locale, true));
   
 }
 
