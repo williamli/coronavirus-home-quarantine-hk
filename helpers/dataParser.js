@@ -61,16 +61,26 @@ const getRecords = (rawContent, locale) => {
   return records;
 }
 
+const csvToJSON = (csv) => {
+  const _csvtojson = require("csvtojson");
+
+  return _csvtojson({
+    noheader:false,
+    output: "json"
+  }).fromString(csv);
+}
+
 const rawToCSV = (rawContent, locale) => {
 
   return getRecords(rawContent, locale).join('\n').appendHeadings(locale);
 
 }
 
-const rawToJSON = (rawContent, locale) => {
+const rawToJSON = async (rawContent, locale) => {
+  
 
-  return getRecords(rawContent, locale).join('\n').appendHeadings(locale);
-
+  return await csvToJSON(getRecords(rawContent, locale).join('\n').appendHeadings(locale));
+  
 }
 
 export {rawToCSV, rawToJSON};
