@@ -22,8 +22,8 @@ const Home = () => {
 
       <div className="hero">
         <h1 className="title">正在接受 14 天家居檢疫人士居住名單</h1>
-        <h6 style={{marginTop: "0.85rem"}}>v0.0.1</h6>
-        <h6>更新日期： 2020-02-06</h6>
+        <h6 style={{marginTop: "0.85rem"}}>v0.0.2</h6>
+        <h6>更新日期： 2020-02-11</h6>
         {/* <p className="description">
           To get started, edit the <code>pages/index.js</code> or{' '}
           <code>pages/api/date.js</code> files, then save to reload.
@@ -36,13 +36,13 @@ const Home = () => {
             <h3>Google Sheet &rarr;</h3>
             {/* <p>Learn more about Next.js on GitHub and in their examples.</p> */}
           </a>
-          <Link href="/api/zh-HK/20200206/csv">
+          <Link href="/api/zh-HK/20200211/csv">
             <a className="card" target="_blank">
               <h3>CSV &rarr;</h3>
               {/* <p>Find other example boilerplates on the Next.js GitHub.</p> */}
             </a>
           </Link>
-          <Link href="/api/zh-HK/20200206/json">
+          <Link href="/api/zh-HK/20200211/json">
             <a className="card" target="_blank">
               <h3>JSON &rarr;</h3>
               {/* <p>Was this tool helpful? Let us know how we can improve it!</p> */}
