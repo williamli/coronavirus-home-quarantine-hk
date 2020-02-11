@@ -23,7 +23,7 @@ export default async (req, res) => {
     } else if (format === 'csv') {
       
 
-      res.setHeader('Content-disposition', `attachment; filename=${id}-${locale}.csv`);
+      res.setHeader('Content-disposition', `attachment; filename=coronavirus-hk-home-quarantine-info-${id}-${locale}.csv`);
       res.setHeader('Content-Type', 'text/csv')
       
       res.end(rawToCSV(fileContent, locale));
