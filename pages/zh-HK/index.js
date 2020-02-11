@@ -36,13 +36,13 @@ const Home = () => {
             <h3>Google Sheet &rarr;</h3>
             {/* <p>Learn more about Next.js on GitHub and in their examples.</p> */}
           </a>
-          <Link href="/data/quarantine-info-zh_hk-20200206.csv">
+          <Link href="/api/zh-HK/20200206/csv">
             <a className="card" target="_blank">
               <h3>CSV &rarr;</h3>
               {/* <p>Find other example boilerplates on the Next.js GitHub.</p> */}
             </a>
           </Link>
-          <Link href="/data/quarantine-info-zh_hk-20200206.json">
+          <Link href="/api/zh-HK/20200206/json">
             <a className="card" target="_blank">
               <h3>JSON &rarr;</h3>
               {/* <p>Was this tool helpful? Let us know how we can improve it!</p> */}
