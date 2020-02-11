@@ -11,6 +11,8 @@ export default async (req, res) => {
 
   const file = `./data/${id}-${locale}.txt`;
 
+  res.setHeader('Cache-Control', 's-maxage=31556952');
+
   try {
     const fileContent = fs.readFileSync(file, 'utf8');
 
