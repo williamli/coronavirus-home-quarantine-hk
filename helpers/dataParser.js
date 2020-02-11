@@ -34,8 +34,16 @@ String.prototype.formatAddress = function (locale) {
   return this.replace(formatter, "\"$1\",\"$3\"$4");
 }
 
+String.prototype.appendHeadings = function (locale) {
+  
+  const headings = locale === 'en-HK' ? `District, Name of Building, End Date of Home Quarantine` : `地區, 大廈名稱, 家居檢疫最後日期`;
+  return `${headings}
+${this}`;
+}
+
+
 const getDistricts = (locale) => {
-  return locale === 'en-HK' ? "Central & Western|Eastern|Southern|Wan Chai|Sham Shui Po|Kowloon City|Kwun Tong|Wong Tai Sin|Yau Tsim Mong|Islands|Kwai Tsing|North|Sai Kung|Sai Hung|Sha Tin|Tai Po|Tsuen Wan|Tuen Mun|Yuen Long" : /Test/;
+  return locale === 'en-HK' ? "Central & Western|Eastern|Southern|Wan Chai|Sham Shui Po|Kowloon City|Kwun Tong|Wong Tai Sin|Yau Tsim Mong|Islands|Kwai Tsing|North|Sai Kung|Sai Hung|Sha Tin|Tai Po|Tsuen Wan|Tuen Mun|Yuen Long" : "中西區|東區|南區|灣仔區|深水埗區|九龍城區|觀塘區|黃大仙區|油尖旺區|離島區|葵青區|北區|西貢區|沙田區|大埔區|荃灣區|屯門區|元朗區";
 }
 
 const getHeadings = (locale) => {
@@ -43,16 +51,26 @@ const getHeadings = (locale) => {
 Quarantine` : `地區 大廈名稱 家居檢疫最後日期`;
 }
 
-const rawToCSV = (rawContent, locale) => {
-
+const getRecords = (rawContent, locale) => {
   const records = rawContent.removeHeadings(locale).removeNumbers().tokenizeRecords().map((record, i)=>{
 
     return record.removeLineBreaks().formatTimestamp().cleanupSpaces().formatAddress(locale);
 
   })
 
-  return records.join("\n\n");
+  return records;
+}
+
+const rawToCSV = (rawContent, locale) => {
+
+  return getRecords(rawContent, locale).join('\n').appendHeadings(locale);
 
 }
 
-export {rawToCSV};
+const rawToJSON = (rawContent, locale) => {
+
+  return getRecords(rawContent, locale).join('\n').appendHeadings(locale);
+
+}
+
+export {rawToCSV, rawToJSON};
